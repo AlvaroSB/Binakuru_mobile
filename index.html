@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Binakuru</title>
+    <meta name="description" content="">
+    <meta name="author" content="Álvaro Sánchez Bravo">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- iPhone -->
+    <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPhone (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 -->
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPad -->
+    <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPad (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo.brownie/lungo.css">
+    <link rel="stylesheet" href="components/lungo.brownie/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo.brownie/lungo.css">
+    <link rel="stylesheet" href="components/lungo.brownie/theme.lungo.css" id="theme-stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/app.css">
+</head>
+
+<body>
+
+    <section id = "mainp">
+        <header id= "intro" data-title="">
+            <nav class="left"> <!-- we add here everything that goes to the left -->
+                <button data-icon = "home"> binakuru</button>
+            </nav>
+            <nav class="right rojo"> <!-- we add here everything that goes to the right -->
+                    <a data-icon="camera" id= "camera" class="redim"></a>                
+                    <a data-icon="search" id= "camera" class="redim"></a>
+            </nav>
+        </header>
+
+       <article id="photo" class="active block" data-control="carousel"> 
+            <div id = "testing">         
+            <img src="http://meetgranada.com/wp-content/uploads/Alhambra_-_Granada_1.jpg" id="frontimage">
+            <div id="circulo">
+                <div class="x1">
+                    <div class="x2">
+                        <span>inspire me!</span>
+                    </div>
+                </div>
+            </div>
+            <div id = "where" class= "text opacity">
+            <span id="probando"> Where do you want to go?</span>
+            </div>
+            </div>
+
+            
+
+               <!--<div id ="inspire">
+                    inspire me!
+                </div>-->  
+                 <div id= "searchdiv" class= "">
+                    <div class="form center" >
+                     <fieldset>
+                        <input type="search" id= "searchbar" placeholder="Search..."/>
+                    </fieldset>
+                </div>
+                </div>
+            <div id = "places">
+            </div>
+             
+        </article>
+         
+     
+       </section>
+
+
+    <!-- Lungo dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo.brownie/lungo.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Kitchen Sink',
+            version: '2.1.0222',
+            resources: []
+        });
+    </script>
+    <script src="app/app.js"></script>
+    <script src="javascripts/jquery.fittext.js"></script>
+</body>
+</html>
