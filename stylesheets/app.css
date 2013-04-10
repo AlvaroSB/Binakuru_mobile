@@ -86,7 +86,7 @@ form fieldset, .form fieldset {
 
 }
 
-#mainp{
+#main{
     height: 100% !important;
 
 }
@@ -99,18 +99,28 @@ form fieldset, .form fieldset {
 }
 
 
+
 #circulo{
-    bottom: 4%;
+    top: 4%;
     position: absolute;
-    right: 5%;
+    right: 3%;
     width: 100%;
     z-index: 200;
 }
 
+#searching{
+    z-index: 200;
+    position: absolute !important;  
+    top: 78%;
+}
+
+#inspire{
+    color: #FAF0E6;
+}
 
  #where{
     position: absolute;
-    bottom: 0px;
+    bottom: 20%;
     z-index: 50000;
  }
 
@@ -123,20 +133,25 @@ form fieldset, .form fieldset {
  #photo{
     position: relative !important;
     height: auto !important;
-    background-color: red;
+    background-color: #d9d9d9;
   
 }
 
 #searchdiv{
-    background-color: #B0B0B0;
+    background-color: #d9d9d9;
     width: 100%;
-    height: 48px;
+    height: 20px;
     text-align: center !important;
+    border-radius: 15px !important;
 }
 
 #searchbar{
     position: relative;
     background-color: #CFCFCF;
+    border-radius: 15px !important;
+    opacity: 0.8;
+    text-align: center;
+    letter-spacing:2px;
 
 }
 
@@ -182,8 +197,65 @@ form fieldset, .form fieldset {
     left: 0;
     top: 45%;
     line-height: 1em;
-    height: 1em;
+    height: 1.3em;
     font-size: 1.2em;
     overflow: hidden;
     color: #f9f9f9;
 }
+
+body { 
+    font-size:10px !important; 
+}
+
+
+
+/* Carousel related*/
+
+#wrapper {
+    position:relative; z-index:1;
+    top:20%; bottom:0; left:0;
+    width:200% !important;
+    background:#d9d9d9;
+    overflow:auto;
+    padding-top: 10px;
+}
+
+#scroller {
+    width:2040px;
+    height:200%;
+    float:left;
+    padding:0;
+    background:#aaa;
+}
+
+#scroller ul {
+    list-style:none;
+    display:block;
+    float:left;
+    width:150%;
+    height:200%;
+    padding:0;
+    margin:0;
+    text-align:left;
+}
+
+#scroller li {
+    display:block;
+    vertical-align:middle;
+    float:left;
+    padding:0 10px;
+    width: 5%;
+    height: 100%;
+    border-left:1px solid #ccc;
+    border-right:1px solid #fff;
+    background-color:#fafafa;
+    font-size:14px;
+}
+
+.test{
+    width: 100%;
+    margin-left: 0 !important;
+
+}
+
+/* ------ */

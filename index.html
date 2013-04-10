@@ -50,10 +50,11 @@
     <link rel="stylesheet" href="components/lungo.brownie/lungo.css">
     <link rel="stylesheet" href="components/lungo.brownie/theme.lungo.css" id="theme-stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
     <!-- App Stylesheet -->
     <link rel="stylesheet" href="stylesheets/app.css">
+
+
 </head>
 
 <body>
@@ -71,38 +72,57 @@
 
        <article id="photo" class="active block" data-control="carousel"> 
             <div id = "testing">         
-            <img src="http://meetgranada.com/wp-content/uploads/Alhambra_-_Granada_1.jpg" id="frontimage">
-            <div id="circulo">
-                <div class="x1">
-                    <div class="x2">
-                        <span id= "inspire">inspire me!</span>
+                <img src="http://meetgranada.com/wp-content/uploads/Alhambra_-_Granada_1.jpg" id="frontimage">
+                
+                <div id="circulo">
+                    <div class="x1">
+                        <div class="x2">
+                            <span id= "inspire">inspire me!</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id = "where" class= "text opacity">
-            <span id="probando"> Where do you want to go?</span>
-            </div>
-            </div>
-
-            
-
-               <!--<div id ="inspire">
-                    inspire me!
-                </div>-->  
-                 <div id= "searchdiv" class= "">
-                    <div class="form center" >
-                     <fieldset>
+                <div id = "where" class= "text opacity">
+                    <span id="wtext"> Where do you want to go?</span>
+                </div>
+                <div class="form center" id= "searching" >
+                    <fieldset>
                         <input type="search" id= "searchbar" placeholder="Search..."/>
                     </fieldset>
                 </div>
-                </div>
-            <div id = "places">
             </div>
-             
-        </article>
-         
-     
-       </section>
+            <!-- Carousel -->
+            <div id="wrapper">
+                <div id="scroller">
+                    <ul id="thelist">
+                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
+                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
+                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
+                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
+                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
+                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
+                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
+                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
+                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
+                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
+                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
+                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
+                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
+                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
+                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
+                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
+                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
+                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
+                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
+                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+
+<!-- Carousel END -->
+
+
+        </article>       
+    </section>
 
 
     <!-- Lungo dependencies -->
@@ -116,12 +136,20 @@
             resources: []
         });
     </script>
-    <script src="app/app.js"></script>
-    <script src="javascripts/jquery.fittext.js"></script>
-    <script src="app/app.js"></script>
-     <script type="text/javascript">
-       document.getElementById("probando").style.fontSize=window.innerWidth / 11.5 +'px' ;
+    <script type="text/javascript">
+       document.getElementById("wtext").style.fontSize=window.innerWidth / 11.5 +'px' ;
        document.getElementById("inspire").style.fontSize=window.innerWidth / 20.5 +'px' ;
+
+        var myScroll;
+        
+        function loaded() {
+            myScroll = new iScroll('wrapper');
+        }
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        document.addEventListener('DOMContentLoaded', loaded, false);
     </script>
+    <script src="app/app.js"></script>
+    <script type="application/javascript" src="javascripts/iscroll.js"></script>
 </body>
 </html>
