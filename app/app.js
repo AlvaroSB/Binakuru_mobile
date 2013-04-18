@@ -33,6 +33,7 @@ var App = (function(lng, undefined) {
 
 })(Lungo);
 
+
 App.carousel = {prev: null, next: null};
 
 Lungo.Events.init({
@@ -75,6 +76,66 @@ Lungo.Events.init({
         App.carousel = Lungo.Element.Carousel($$('[data-control=carousel]')[0], function(index, element) {
             Lungo.dom("section#carousel .title span").html(index + 1);
         });
+    },
+    
+    'load section#place_1': function(event) {
+        var myScroll3;
+        document.getElementById('banner_up').style.height = document.getElementById('circle').offsetHeight + 'px';
+        document.getElementById("info").style.fontSize = (window.innerWidth)/36 + 'px';
+        document.getElementById("plus").style.fontSize = (window.innerWidth)/13.82 + 'px';
+        document.getElementById("place_name").style.fontSize = (window.innerWidth)/17.19 + 'px';
+       
+        myScroll3 = new iScroll('wrapper_menu');
+        var myOptions = {
+                center: new google.maps.LatLng(39.8574, -4.02084),
+                zoom: 3,
+                mapTypeControl: false,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);     
+
+    },
+
+       'load section#place_2': function(event) {
+        var myScroll3;
+        document.getElementById('banner_up').style.height = document.getElementById('circle').offsetHeight + 'px';
+        document.getElementById("info").style.fontSize = (window.innerWidth)/36 + 'px';
+        document.getElementById("plus").style.fontSize = (window.innerWidth)/13.82 + 'px';
+        document.getElementById("place_name_2").style.fontSize = (window.innerWidth)/20 + 'px';
+       
+        myScroll3 = new iScroll('wrapper_menu');
+        var myOptions = {
+                center: new google.maps.LatLng(39.8574, -4.02084),
+                zoom: 3,
+                mapTypeControl: false,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);     
+
+    },
+
+    'load section#place_3': function(event) {
+        var myScroll3;
+        document.getElementById('banner_up').style.height = document.getElementById('circle').offsetHeight + 'px';
+        document.getElementById("info").style.fontSize = (window.innerWidth)/36 + 'px';
+        document.getElementById("plus").style.fontSize = (window.innerWidth)/13.82 + 'px';
+        document.getElementById("place_name_3").style.fontSize = (window.innerWidth)/22 + 'px';
+       
+        myScroll3 = new iScroll('wrapper_menu');
+        var myOptions = {
+                center: new google.maps.LatLng(39.8574, -4.02084),
+                zoom: 3,
+                mapTypeControl: false,
+                disableDefaultUI: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);     
+
     },
 
     'tap section#carousel > header [data-direction=left]':  App.carousel.prev,
@@ -138,7 +199,43 @@ Lungo.Events.init({
     },
 
     'tap article#notification a[data-action=html]': function() {
+        var myOptions = {
+                center: new google.maps.LatLng(54, -2),
+                zoom: 6,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+        Lungo.Notification.html('<div id="map_canvas"></div>', true);
+    },
+
+    'tap article#photo #inspire': function() {
         Lungo.Notification.html('<h1>Hello World</h1>', true);
+    },
+
+    'tap article#photo #wrapper .scroller .thelist li': function() {
+
+    // remove child
+    var tester= this.getAttribute("id");
+
+    /*var node = document.getElementById(tester);*/
+
+    //document.getElementById(tester).innerHTML = "<div id='relleno'>Add</div>";
+   /* if (node.parentNode) {
+    node.parentNode.removeChild(node);
+    }
+
+
+
+  var list = document.getElementById("lalala");
+    var newnode = document.createElement("li");
+    list.insertBefore(newnode,this);
+    newnode.innerText = "List node 5";*/
+
+        //this.setAttribute("src", "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg");
+
+
     },
 
     'tap article#notification a[data-action=chaining]': function() {
@@ -153,6 +250,7 @@ Lungo.Events.init({
     }
 
 });
+
 
 Lungo.ready(function() {
 

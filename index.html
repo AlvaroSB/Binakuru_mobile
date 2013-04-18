@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Binakuru</title>
     <meta name="description" content="">
     <meta name="author" content="Álvaro Sánchez Bravo">
@@ -13,21 +13,21 @@
     <meta http-equiv="cleartype" content="on">
 
     <!-- iPhone -->
-    <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
-    <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+    <link href="assets/binakuru_57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="" media="(device-width: 320px) and (device-height: 480px)
              and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 
     <!-- iPhone (Retina) -->
-    <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="assets/binakuru_114.png" sizes="114x114" rel="apple-touch-icon">
     <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
              and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
     <!-- iPhone 5 -->
-    <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+    <link href="" media="(device-width: 320px) and (device-height: 568px)
              and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
     <!-- iPad -->
-    <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="assets/binakuru_72.png" sizes="72x72" rel="apple-touch-icon">
     <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
              and (orientation: portrait)
              and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
@@ -36,7 +36,7 @@
              and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 
     <!-- iPad (Retina) -->
-    <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="assets/binakuru_144.png" sizes="144x144" rel="apple-touch-icon">
     <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
              and (orientation: portrait)
              and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
@@ -53,16 +53,18 @@
 
     <!-- App Stylesheet -->
     <link rel="stylesheet" href="stylesheets/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
 
 
 </head>
 
-<body>
+<body class="scroll">
 
     <section id = "mainp">
         <header id= "intro" data-title="">
-            <nav class="left"> <!-- we add here everything that goes to the left -->
-                <button data-icon = "home"> binakuru</button>
+            <nav class="left kaka"> <!-- we add here everything that goes to the left -->
+            <img src="assets/logos-11.png" id="logo" />
             </nav>
             <nav class="right rojo"> <!-- we add here everything that goes to the right -->
                     <a data-icon="camera" id= "camera" class="redim"></a>                
@@ -70,53 +72,93 @@
             </nav>
         </header>
 
-       <article id="photo" class="active block" data-control="carousel"> 
+       <article id="photo" class="scroll"> 
             <div id = "testing">         
                 <img src="http://meetgranada.com/wp-content/uploads/Alhambra_-_Granada_1.jpg" id="frontimage">
                 
                 <div id="circulo">
                     <div class="x1">
-                        <div class="x2">
-                            <span id= "inspire">inspire me!</span>
+                        <div class="x2" >
+                            <span id= "inspire">inspire</span>
                         </div>
                     </div>
                 </div>
-                <div id = "where" class= "text opacity">
+
+                <!--<div id = "where" class= "text opacity">
                     <span id="wtext"> Where do you want to go?</span>
-                </div>
+                </div> -->
                 <div class="form center" id= "searching" >
                     <fieldset>
-                        <input type="search" id= "searchbar" placeholder="Search..."/>
+                        <input type="search" id= "searchbar" placeholder="Where do you want to go?"/>
                     </fieldset>
-                </div>
-            </div>
+                </div> 
+                </div> 
             <!-- Carousel -->
             <div id="wrapper">
-                <div id="scroller">
-                    <ul id="thelist">
-                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
-                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
-                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
-                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
-                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
-                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
-                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
-                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
-                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
-                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
-                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
-                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
-                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
-                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
-                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
-                        <li><img class ="test" src = "http://4.bp.blogspot.com/_4DZeuZWSETU/TQMTbRTWH8I/AAAAAAAAAvU/l3itZxgW1yQ/s1600/the-city-of-arts-and-sciences-valencia-spain.jpg" /></li>
-                        <li><img class ="test" src = "http://3.bp.blogspot.com/-mDlo3cVYEGc/Th12zxh99jI/AAAAAAAAAGE/yX9RxzubM_8/s1600/6a00d8341bf8f353ef014e5fda5433970c-800wi_large.jpeg" /></li>
-                        <li><img class ="test" src = "http://25.media.tumblr.com/tumblr_m7coocwxCB1ra6w8go1_500.jpg" /></li>
-                        <li><img class ="test" src = "http://10think.com/wp-content/uploads/2012/04/Honeymoon-places-Hawaii.jpg" /></li>
-                        <li><img class ="test" src = "http://farm2.static.flickr.com/1184/1211079636_d31339fc79.jpg" /></li>
+                <div class="scroller">
+                    <ul class="thelist" id="lalala">
+                        <li data-view-section="place_1" data-async="app/sections/place_1.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/71.jpeg" /></li>
+                        <li data-view-section="place_2" data-async="app/sections/place_2.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/68.jpeg" /></li>
+                        <li><img class ="test" data-view-section="place_3" data-async="app/sections/place_3.html"src = "http://vish.lab.fi-ware.eu/pictures/66.jpeg" /></li>
+                        <li data-view-section="place_1" data-async="app/sections/place_1.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/71.jpeg" /></li>
+                        <li data-view-section="place_2" data-async="app/sections/place_2.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/68.jpeg" /></li>
+                        <li><img class ="test" data-view-section="place_3" data-async="app/sections/place_3.html"src = "http://vish.lab.fi-ware.eu/pictures/66.jpeg" /></li>
+                        <li data-view-section="place_1" data-async="app/sections/place_1.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/71.jpeg" /></li>
+                        <li data-view-section="place_2" data-async="app/sections/place_2.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/68.jpeg" /></li>
+                        <li><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/66.jpeg" /></li>
                     </ul>
                 </div>
             </div>
+
+            <div class="greybox">
+                <p>my city</p>
+            </div>
+
+            <div id="wrapper2">
+                <div class="scroller">
+                    <ul class="thelist">
+                        <li data-view-section="place_1" data-async="app/sections/place_1.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/71.jpeg" /></li>
+                        <li><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/68.jpeg" /></li>
+                        <li><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/66.jpeg" /></li>
+                        <li data-view-section="place_1" data-async="app/sections/place_1.html"><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/71.jpeg" /></li>
+                        <li><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/66.jpeg" /></li>
+                        <li><img class ="test" src = "http://vish.lab.fi-ware.eu/pictures/68.jpeg" /></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="greybox">
+                <p>top travelers</p>
+            </div>
+            <div class="top">            
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo01.png">
+                </div>
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo02.png">
+                </div>
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo03.png">
+                </div>
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo04.png">
+                </div>              
+            </div>
+            <div>            
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo05.png">
+                </div>
+                <div class ="travicon">
+                <img class="topt" src="assets/avatars/photo06.png">
+                </div> 
+                <div id="register">
+                Register 
+                </div>         
+            </div>
+
+
+
+
 
 <!-- Carousel END -->
 
@@ -137,19 +179,24 @@
         });
     </script>
     <script type="text/javascript">
+       document.getElementById("inspire").style.fontSize=window.innerWidth / 17 +'px' ;
        document.getElementById("wtext").style.fontSize=window.innerWidth / 11.5 +'px' ;
-       document.getElementById("inspire").style.fontSize=window.innerWidth / 20.5 +'px' ;
+
 
         var myScroll;
+        var myScroll2;
         
         function loaded() {
             myScroll = new iScroll('wrapper');
-        }
+            myScroll2 = new iScroll('wrapper2');
+        };
+
 
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
         document.addEventListener('DOMContentLoaded', loaded, false);
     </script>
     <script src="app/app.js"></script>
     <script type="application/javascript" src="javascripts/iscroll.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </body>
 </html>

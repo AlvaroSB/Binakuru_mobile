@@ -1,3 +1,7 @@
+html, body{
+  -webkit-overflow-scrolling:touch !important;
+}
+
 #main article li.contrast {
     font-size: 0.95em;
 }
@@ -43,10 +47,11 @@
     margin-right: 4px;
 }
 #intro{
-    background-color: #2E2E2E !important;
+    background-color: white !important;
     border-style: none;
     box-shadow: none !important;
      -webkit-box-shadow: none !important;
+     color: green;
 
 }
 
@@ -55,20 +60,29 @@
    /* font-size: 16pt !important;*/
     font-style: bold;
     margin-top: 3px;
+    width: 70%;
 }
 
 section > header > nav a:not(.button) {
-    color: #FF4500;
-    text-shadow: 0 1px 0 #BD9178;
+    color: transparent;
+    text-shadow: 0 1px 0 transparent !important;
 }
 
 .rojo{
     float: right !important;
+    margin-top: 0;
 }
 
+#logo{
+    width: 100%;
+
+}
+.kaka{
+    width: 150px;
+}
 
 #camera{
-    color: white;
+    color: #0da592 !important;
     opacity: 0.7;
 }
 
@@ -116,6 +130,8 @@ form fieldset, .form fieldset {
 
 #inspire{
     color: #FAF0E6;
+    margin-top: -7%;
+    font-family: 'Lato';
 }
 
  #where{
@@ -128,12 +144,14 @@ form fieldset, .form fieldset {
     color: #DCDCDC;  
     text-align: center;
     font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
  }
 
  #photo{
     position: relative !important;
     height: auto !important;
-    background-color: #d9d9d9;
+    background-color: #f9f9f9;
   
 }
 
@@ -143,6 +161,7 @@ form fieldset, .form fieldset {
     height: 20px;
     text-align: center !important;
     border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
 }
 
 #searchbar{
@@ -171,7 +190,7 @@ form fieldset, .form fieldset {
 
 #testing{
     height: auto !important;
-    position: relative;
+    position: relative !important;
 }
 
 .x1 {
@@ -187,7 +206,7 @@ form fieldset, .form fieldset {
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     -khtml-border-radius: 50%;
-    background: #c07313;
+    background: #0da592;
     text-align:center;
     position: relative;
 }
@@ -199,7 +218,7 @@ form fieldset, .form fieldset {
     line-height: 1em;
     height: 1.3em;
     font-size: 1.2em;
-    overflow: hidden;
+    overflow: hidden; 
     color: #f9f9f9;
 }
 
@@ -209,53 +228,377 @@ body {
 
 
 
-/* Carousel related*/
-
-#wrapper {
-    position:relative; z-index:1;
-    top:20%; bottom:0; left:0;
-    width:200% !important;
+/* Carousel related */
+#wrapper_menu{
+    position:relative; 
+    z-index:1;
+    bottom:0; 
+    left:0;
+    width:100% !important;
     background:#d9d9d9;
     overflow:auto;
     padding-top: 10px;
 }
 
-#scroller {
-    width:2040px;
-    height:200%;
+#wrapper {
+    position:relative; z-index:1;
+    top:20%; bottom:0; left:0;
+    width:100% !important;
+    background:#f9f9f9;
+    overflow:auto;
+    padding-top: 10px;
+}
+
+#wrapper2{
+    position:relative; z-index:1;
+    top:50%; bottom:0; left:0;
+    width:100% !important;
+    background:#f9f9f9;
+    overflow:auto;
+    padding-top: 10px;
+}
+
+
+
+
+.scroller li {
+    display: inline-block;/* changed */
+    /*float:left; */   /* deleted */
+    padding: 0 8px;
+    width: 120px;
+    height: 120px;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #f9f9f9;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+.scroller ul {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    white-space:nowrap; /* added */
+}
+.scroller {
+    /* width: 8520px; */   /* deleted */
+    height: 100%;
+    float: left;
+    padding: 0;
+}
+
+/*
+.scroller {
+    width: 2400px;
+    height:100%;
     float:left;
     padding:0;
     background:#aaa;
 }
 
-#scroller ul {
+.scroller ul {
     list-style:none;
     display:block;
     float:left;
-    width:150%;
-    height:200%;
+    width:100%;
+    height:100%;
     padding:0;
     margin:0;
     text-align:left;
 }
 
-#scroller li {
+.scroller li {
+    display:block;
+    vertical-align:middle;
+    float:left;
+    width: 120px;
+    height: 120px;
+    border-left:1px solid #ccc;
+    border-right:1px solid #fff;
+    background-color: #c07313;
+    font-size:14px;
+   
+}*/
+
+.test{
+    width: 120%;
+    margin-left: -11% !important;
+    margin-right: 0 !important;
+    height: 120px;
+
+}
+
+.menu_item {
+    width: 122%;
+    background-color: #a1a1a1;
+    margin-left: -11% !important;
+    margin-right: 0 !important;
+    padding-top: 20%;
+    height: 59px;
+
+}
+
+.menu_item p{
+    font-family: 'Lato';
+    text-align: center;
+}
+
+/* --- */
+
+.greybox{
+    margin-top: 4px;
+    height: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.greybox p{
+    margin-top: 2%;
+    font-size: 12pt;
+    color:#0da592;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.top{
+    margin-top: 4px;
+    width: 100%;
+}
+.travicon{
+    width: 24%;
+    position: relative;
+    display: inline-block;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.topt{
+    width: 100%;
+}
+
+#register{
+    width: 48%;
+    position: absolute;
+    display: inline-block;
+    font-size: 15pt;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: #0da592;
+    height: 80%;
+    font-family: 'Lato';
+    margin-top: 14%;
+    text-align: center;
+    padding-top: 7%;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.marginb{
+    margin-bottom: 10px;
+}
+
+#sustitute{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+#relleno{
+    background-color: red;
+    height: auto;
+     width: 100%;
+}
+
+/* Place.html*/
+
+
+
+#place{
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+#posit{
+    position: relative;
+    width: 100% !important;
+    z-index: 3;
+    float: left;
+    margin-left: 2% !important;
+    margin-top: - 10px;
+
+
+}
+
+.y1 .y2{
+     float: left !important;
+     bottom: 0 !important;
+}
+
+
+
+#place_name, #place_name_2, #place_name_3{
+    height: 150px;
+    margin-top: -10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+#add{
+    position: absolute;
+    width: 40%;
+    z-index: 200;
+    top: -8%;
+    right: 2%;
+
+}
+
+#plus{
+    font-size: 2.5em;
+    margin-top: -43%;
+    margin-right: 4%;
+}
+
+#info{
+    position: absolute;
+    margin-left: 35%;
+    width: 44%;
+    z-index: 200;
+    padding-top: 5%;
+}
+
+
+
+
+/* menu */
+#scroller_menu li {
+    display: inline-block;/* changed */
+    /*float:left; */   /* deleted */
+    padding: 0 10px;
+    width: 120px;
+    height: 100%;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid white;
+    background-color: #FAFAFA;
+    font-size: 14px;
+}
+#scroller_menu ul {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    white-space:nowrap; /* added */
+}
+#scroller_menu {
+    /* width: 8520px; */   /* deleted */
+    height: 100%;
+    float: left;
+    padding: 0;
+}
+
+
+/*#scroller_menu {
+    width:2040px;
+    height:100%;
+    float:left;
+    padding:0;
+    background:#aaa;
+}
+
+
+#scroller_menu ul {
+    list-style:none;
+    display:block;
+    float:left;
+    width:100%;
+    height:40%;
+    padding:0;
+    margin:0;
+    text-align:left;
+}
+
+#scroller_menu li {
     display:block;
     vertical-align:middle;
     float:left;
     padding:0 10px;
-    width: 5%;
-    height: 100%;
+    width: 6%;
+    height: 6%;
     border-left:1px solid #ccc;
     border-right:1px solid #fff;
     background-color:#fafafa;
     font-size:14px;
 }
-
-.test{
-    width: 100%;
-    margin-left: 0 !important;
-
+*/
+#description{
+    position: relative;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 70%;
 }
 
-/* ------ */
+#description p{
+    margin-bottom: 4%;
+}
+
+#main-placea{
+    height: 100% !important;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow-x: hidden !important;
+}
+
+#main-place-map{
+        height: 100% !important;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow-x: hidden !important;
+}
+}
+
+#banner{
+    height: 18%;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+#banner_up{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    background-color: white;
+    margin-top: 6%;
+    font-family: 'Lato';
+}
+
+#moreinfo a{
+    margin-top: 10%;
+    font-family: 'Lato';
+    color: #0da592;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#star{
+    width: 10%;
+}
+
+#mini-logo{
+    left: -10%;
+    width: 20%;
+    z-index: -1;
+    position: relative
+}
+
